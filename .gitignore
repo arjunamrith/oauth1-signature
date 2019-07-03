@@ -74,3 +74,9 @@ VIdeos/.tmp.drivedownload/9652269.driveupload
 VIdeos/.tmp.drivedownload/5336946.driveupload
 VIdeos/.tmp.drivedownload/4753132.driveupload
 VIdeos/*
+
+
+
+certs/
+.gitignore
+test.js
