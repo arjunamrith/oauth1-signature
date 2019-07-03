@@ -1,11 +1,8 @@
 const oauthsignature = require('oauth-signature')
 const uuidV4 = require('uuid/v4')
 
-
-var httpmethod='GET'
-
-
 const sign=(url,CI,CS,callback)=>{
+    var httpmethod='GET'
     var timestamp=Math.floor(new Date()/1000)
     const nonce=uuidV4()
     const parameters = {
@@ -19,6 +16,6 @@ const sign=(url,CI,CS,callback)=>{
     callback(timestamp,nonce,encodedsignature)
 }
 
-sign('test.com','asdkjhaslkd','123kj4hsxcljkh',(timestamp,nonce,encodedsignature)=>{
-    
-})
+module.exports={
+    sign:sign
+}
